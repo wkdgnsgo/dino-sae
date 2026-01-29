@@ -28,11 +28,12 @@ Experiments on ImageNet-1K demonstrate that our approach achieves **0.37 rFID** 
 
 ## 🛠️ Installation
 
+<!--
 ```bash
 conda create -n dinosae python=3.9
 conda activate dinosae
 pip install -r requirements.txt
-```
+``` -->
 
 ## 🏗️ Architecture & Method
 
@@ -132,14 +133,14 @@ Using DINO-SAE latents leads to faster convergence and higher generation quality
 
 If you find this work useful for your research, please cite our paper:
 
-```bibtex
+<!-- ```bibtex
 @article{dino_sae_2025,
   title={DINO-SAE: DINO Spherical Autoencoder for High-Fidelity Image Reconstruction and Generation},
   author={Anonymous Authors},
   journal={Under Review at ICML},
   year={2025}
 }
-```
+``` -->
 
 ## 🙏 Acknowledgement
 
