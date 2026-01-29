@@ -53,7 +53,7 @@ We employ a **4-Stage Progressive Training Strategy** to balance semantic alignm
 **Stage 1: Semantic-Structural Alignment**
 Trains the Convolutional Patch Embedding and Decoder from scratch.
 
-```bash
+<!-- ```bash
 python train_ae.py \
     --stage 1 \
     --data_path /path/to/imagenet \
@@ -61,48 +61,49 @@ python train_ae.py \
     --lr 1e-5 \
     --lambda_cos 0.5 \
     --lambda_lpips 1.0
-```
+``` -->
 
-\*\*Stage 2: Adversarial Adaptation Adds GAN loss with a DINO-based Discriminator to enhance textural realism.
+**Stage 2: Adversarial Adaptation** Adds GAN loss with a DINO-based Discriminator to enhance textural realism.
 
-```bash
+<!-- ```bash
 python train_ae.py \
     --stage 2 \
     --resume output/stage1/checkpoint.pth \
     --lr 1e-4 \
     --lambda_adv 0.5
-```
+``` -->
 
-\*\*Stage 3: Decoder Refinement Freezes the entire encoder (including the patch embedding) to fix the semantic latent space, fine-tuning only the decoder.
+**Stage 3: Decoder Refinement** Freezes the entire encoder (including the patch embedding) to fix the semantic latent space, fine-tuning only the decoder.
 
-```bash
+<!-- ```bash
 python train_ae.py \
     --stage 3 \
     --resume output/stage2/checkpoint.pth \
     --freeze_encoder \
     --lr 1e-4
-```
+``` -->
 
-\*\*Stage 4: Noise Augmentation Injects noise into the latents while keeping the encoder frozen to make the decoder robust for generative modeling.
+**Stage 4: Noise Augmentation** Injects noise into the latents while keeping the encoder frozen to make the decoder robust for generative modeling.
 
-```bash
+<!-- ```bash
 python train_ae.py \
     --stage 4 \
     --resume output/stage3/checkpoint.pth \
     --noise_aug True \
     --lr 5.4e-5
-```
+``` -->
 
-\*\*Generation (Riemannian Flow Matching)
+**Generation (Riemannian Flow Matching)**
 Train the Diffusion Transformer (DiT) on the spherical latent space extracted by DINO-SAE.
 
+<!--
 ```bash
 python train_dit.py \
     --ae_checkpoint output/stage4/checkpoint.pth \
     --model DiT-XL/2 \
     --rfm True \
     --epochs 80
-```
+``` -->
 
 ## 📊 Results
 
@@ -144,7 +145,8 @@ If you find this work useful for your research, please cite our paper:
 
 This project is built upon the following open-source projects. We thank the authors for making their code and models available.
 
+<!--
 - [cite_start]**[DINOv3](https://github.com/facebookresearch/dinov2)**: We utilize the pre-trained DINOv3 ViT-Large as our frozen encoder backbone[cite: 265, 328].
 - [cite_start]**[RAE](https://github.com/imzhengboy/RAE)**: Our noise augmentation strategy and baseline comparisons are adopted from the RAE codebase[cite: 447].
 - [cite_start]**[DC-AE](https://arxiv.org/abs/2410.10733)**: We adopt the lightweight decoder architecture proposed in DC-AE for efficient upsampling[cite: 329].
-- [cite_start]**[SiT](https://github.com/willmcneil/SiT)** & **[DiT](https://github.com/facebookresearch/DiT)**: The diffusion transformer architectures for our generative experiments are based on these repositories[cite: 128, 579].
+- [cite_start]**[SiT](https://github.com/willmcneil/SiT)** & **[DiT](https://github.com/facebookresearch/DiT)**: The diffusion transformer architectures for our generative experiments are based on these repositories[cite: 128, 579]. -->
