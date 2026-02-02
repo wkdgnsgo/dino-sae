@@ -6,7 +6,7 @@
 > 2601.22904
 > [![arXiv](https://img.shields.io/badge/arXiv-2601.22904-b31b1b.svg)](https://arxiv.org/abs/2601.22904)
 
-This repository is the official implementation of the paper: **"DINO-SAE: DINO Spherical Autoencoder for High-Fidelity Image Reconstruction and Generation"** (Under Review at ICML).
+This repository is the official implementation of the paper: **"DINO-SAE: DINO Spherical Autoencoder for High-Fidelity Image Reconstruction and Generation"**.
 
 ## 📖 Abstract
 
