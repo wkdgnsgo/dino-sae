@@ -33,7 +33,7 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
-
+.Rhistory
 # Virtual Environments
 .env
 .venv
