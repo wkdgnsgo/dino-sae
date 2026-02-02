@@ -3,8 +3,8 @@
 ![Teaser Image](./assets/intro_samples.png)
 
 > **Figure 1.** Generated images from DiTDH model trained on DINO-SAE latents. DINO-SAE achieves state-of-the-art reconstruction quality while maintaining strong semantic alignment to the pretrained VFM.
-
-[![arXiv](https://img.shields.io/badge/arXiv-2509.xxxxx-b31b1b.svg)]()
+> 2601.22904
+> [![arXiv](https://img.shields.io/badge/arXiv-2601.22904-b31b1b.svg)](https://arxiv.org/abs/2601.22904)
 
 This repository is the official implementation of the paper: **"DINO-SAE: DINO Spherical Autoencoder for High-Fidelity Image Reconstruction and Generation"** (Under Review at ICML).
 
