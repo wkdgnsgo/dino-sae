@@ -8,6 +8,11 @@
 
 This repository is the official implementation of the paper: **"DINO-SAE: DINO Spherical Autoencoder for High-Fidelity Image Reconstruction and Generation"**.
 
+## News
+
+- **[2026/Jan/30]** We posted our paper _DINO-SAE_ on arXiv!
+- **[2026/Feb/5]** We are currently conducting further training the model and will release the code soon!
+
 ## 📖 Abstract
 
 Recent studies have explored using pretrained Vision Foundation Models (VFMs) such as DINO for generative autoencoders. Unfortunately, existing approaches often suffer from limited reconstruction fidelity due to the loss of high-frequency details.
