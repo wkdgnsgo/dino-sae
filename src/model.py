@@ -465,14 +465,13 @@ class CnnPatchEmbed(nn.Module):
         x = x.permute(0, 2, 3, 1)
         return x
 
-class DinoAutoencoderV3_EarlyFusion(nn.Module):
+class DINOSphericalAutoencoder(nn.Module):
     """
     An autoencoder that uses a DINO model with an enhanced CNN-based patch embedder.
-    This represents the 'Early Fusion' strategy.
     """
     def __init__(self, dino_cfg: OmegaConf, decoder_cfg: DecoderConfig, train_cnn_embedder: bool = True):
         super().__init__()
-        print("Initializing DinoAutoencoder with Early Fusion (CNN Patch Embedding)...")
+        print("Initializing DINOSphericalAutoencoder (CNN Patch Embedding)...")
         
         # 1. Load the pre-trained DINO model
         self.dino_model = torch.hub.load(
