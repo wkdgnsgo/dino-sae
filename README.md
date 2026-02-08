@@ -11,7 +11,7 @@ This repository is the official implementation of the paper: **"DINO-SAE: DINO S
 ## News
 
 - **[2026/Jan/30]** We posted our paper _DINO-SAE_ on arXiv!
-- **[2026/Feb/5]** We are currently conducting further training the model and will release the code soon!
+- **[2026/Feb/5]** We are currently training the model further and will release the code soon!
 
 ## 📖 Abstract
 
