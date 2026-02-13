@@ -5,18 +5,14 @@
 > **Figure 1.** Generated images from DiTDH model trained on DINO-SAE latents. DINO-SAE achieves state-of-the-art reconstruction quality while maintaining strong semantic alignment to the pretrained VFM.
 > 2601.22904
 > [![arXiv](https://img.shields.io/badge/arXiv-2601.22904-b31b1b.svg)](https://arxiv.org/abs/2601.22904)
-
-This repository is the official implementation of the paper: **"DINO-SAE: DINO Spherical Autoencoder for High-Fidelity Image Reconstruction and Generation"**.
+> [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dino%20SAE-yellow)](https://huggingface.co/wkdgnsgo/dino-sae)
+> This repository is the official implementation of the paper: **"DINO-SAE: DINO Spherical Autoencoder for High-Fidelity Image Reconstruction and Generation"**.
 
 ## News
 
 - **[2026/Jan/30]** We posted our paper _DINO-SAE_ on arXiv!
 - **[2026/Feb/5]** We are currently training the model further and will release the code soon!
 - **[2026/Feb/14]** We released SAE checkpoints and DDT-XL (80 epochs) model!
-
-## Model Checkpoints
-
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dino%20SAE-yellow)](https://huggingface.co/wkdgnsgo/dino-sae)
 
 ## 📖 Abstract
 
