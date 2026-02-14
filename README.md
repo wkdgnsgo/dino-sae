@@ -73,8 +73,8 @@ Ensure your project directory matches the following structure:
 ````text
 DinoSae/
 ├── src/
-│   ├── dinov3/                                      <-- (Repo Root)
-│   │   ├── dinov3/                                  <-- (Source Package)
+│   ├── dinov3/
+│   │   ├── dinov3/
 │   │   └── ...
 │   └── dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth <-- Pretrained Weight
 ├── requirements.txt
