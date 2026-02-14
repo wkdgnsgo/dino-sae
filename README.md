@@ -70,7 +70,7 @@ Download dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth from [Here](https://github
 
 Ensure your project directory matches the following structure:
 
-````text
+```text
 DinoSae/
 ├── src/
 │   ├── dinov3/
@@ -198,4 +198,7 @@ This project is built upon the following open-source projects. We thank the auth
 - [cite_start]**[RAE](https://github.com/imzhengboy/RAE)**: Our noise augmentation strategy and baseline comparisons are adopted from the RAE codebase[cite: 447].
 - [cite_start]**[DC-AE](https://arxiv.org/abs/2410.10733)**: We adopt the lightweight decoder architecture proposed in DC-AE for efficient upsampling[cite: 329].
 - [cite_start]**[SiT](https://github.com/willmcneil/SiT)** & **[DiT](https://github.com/facebookresearch/DiT)**: The diffusion transformer architectures for our generative experiments are based on these repositories[cite: 128, 579]. -->
-````
+
+```
+
+```
