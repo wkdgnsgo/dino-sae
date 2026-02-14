@@ -79,6 +79,8 @@ DinoSae/
 │   └── dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth <-- Pretrained Weight
 ├── requirements.txt
 └── README.md
+```
+
 ## 🏗️ Architecture & Method
 
 DINO-SAE modifies the standard ViT encoder to bridge the gap between semantic representation and high-fidelity reconstruction.
