@@ -66,13 +66,19 @@ pip install -r requirements.txt
 
 Download dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth from [Here](https://github.com/facebookresearch/dinov3)
 
+### 3. Directory Structure
+
+Ensure your project directory matches the following structure:
+
+````text
 DinoSae/
 ├── src/
-│ ├── dinov3/ <-- Cloned DINOv3 repository
-│ └── dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth <-- Pretrained weight (Directly under src/)
+│   ├── dinov3/                                      <-- (Repo Root)
+│   │   ├── dinov3/                                  <-- (Source Package)
+│   │   └── ...
+│   └── dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth <-- Pretrained Weight
 ├── requirements.txt
 └── README.md
-
 ## 🏗️ Architecture & Method
 
 DINO-SAE modifies the standard ViT encoder to bridge the gap between semantic representation and high-fidelity reconstruction.
@@ -190,3 +196,4 @@ This project is built upon the following open-source projects. We thank the auth
 - [cite_start]**[RAE](https://github.com/imzhengboy/RAE)**: Our noise augmentation strategy and baseline comparisons are adopted from the RAE codebase[cite: 447].
 - [cite_start]**[DC-AE](https://arxiv.org/abs/2410.10733)**: We adopt the lightweight decoder architecture proposed in DC-AE for efficient upsampling[cite: 329].
 - [cite_start]**[SiT](https://github.com/willmcneil/SiT)** & **[DiT](https://github.com/facebookresearch/DiT)**: The diffusion transformer architectures for our generative experiments are based on these repositories[cite: 128, 579]. -->
+````
