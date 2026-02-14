@@ -41,12 +41,37 @@ Experiments on ImageNet-1K demonstrate that our approach achieves **0.37 rFID** 
 
 ## 🛠️ Installation
 
-<!--
+### 1. Environment Setup
+
+First, create the conda environment and install dependencies.
+
 ```bash
-conda create -n dinosae python=3.9
+conda create -n dinosae python=3.11
 conda activate dinosae
+
+# 2. Install PyTorch first (Recommended for CUDA compatibility)
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# 3. Install other dependencies
 pip install -r requirements.txt
-``` -->
+```
+
+### 2. Prepare DINOv3
+
+1. **Clone the repository:**
+   ```bash
+   cd src
+   git clone https://github.com/facebookresearch/dinov3.git
+   ```
+
+Download dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth from [Here](https://github.com/facebookresearch/dinov3)
+
+DinoSae/
+├── src/
+│ ├── dinov3/ <-- Cloned DINOv3 repository
+│ └── dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth <-- Pretrained weight (Directly under src/)
+├── requirements.txt
+└── README.md
 
 ## 🏗️ Architecture & Method
 
@@ -136,11 +161,12 @@ DINO-SAE significantly outperforms existing VFM-based autoencoders in terms of p
 
 Using DINO-SAE latents leads to faster convergence and higher generation quality compared to RAE and VAVAE baselines.
 
-| Method                         | Epochs |  gFID ↓  |   IS ↑    |
-| :----------------------------- | :----: | :------: | :-------: |
-| RAE + LightningDiT-XL          |   80   |   4.28   |   214.8   |
-| **DINO-SAE + LightningDiT-XL** |   80   | **3.47** | **202.1** |
-| **DINO-SAE + DiTDH-XL**        |   80   | **3.07** | **209.7** |
+| Method                         | Epochs | gFID ↓ |   IS ↑    |
+| :----------------------------- | :----: | :----: | :-------: |
+| RAE + LightningDiT-XL          |   80   |  4.28  |     -     |
+| RAE + DiTDH-XL                 |   80   |  2.16  |   214.8   |
+| **DINO-SAE + LightningDiT-XL** |   80   |  3.47  | **202.1** |
+| **DINO-SAE + DiTDH-XL**        |   80   |  2.66  |   209.7   |
 
 ## 📜 Citation
 
